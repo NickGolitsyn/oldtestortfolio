@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #EEF0F3;
+  --white: #EEF0F3;
+  /* background-color: #010101; */
+  /* background-color: #4158D0; */
+/* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+  background: conic-gradient(from 79.28deg at 51.41% 47.6%, #2E1528 -12.45deg, #080423 58.56deg, #490E18 106.37deg, #070D0C 154.96deg, #453525 241.51deg, #0B1425 300.42deg, #2E1528 347.55deg, #080423 418.56deg);
+  -webkit-background: conic-gradient(from 79.28deg at 51.41% 47.6%, #2E1528 -12.45deg, #080423 58.56deg, #490E18 106.37deg, #070D0C 154.96deg, #453525 241.51deg, #0B1425 300.42deg, #2E1528 347.55deg, #080423 418.56deg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  backdrop-filter: blur(100px) brightness(100%) contrast(120%);
+  -webkit-backdrop-filter: blur(100px) brightness(100%) contrast(120%);
+  min-height: 100vh;
+}
+
+ul {
+  margin-right: 20px;
+}
+
+li {
+  list-style-type: ">";
+  padding-left: 10px;
+  margin: 3rem 0 3rem 10px;
+  transition: all .3s;
+  width: fit-content;
+  font-size: 3rem;
+}
+
+.c-white {
+  color: var(--white);
+}
+
+.w-90vw {
+  width: 90vw;
+}
+
+h3 {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background: #ffffff !important;
+  }
+}

@@ -1,0 +1,38 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 100vh;
+  padding: 3rem;
+}
+.about-me {
+  text-align: right;
+}
+.proj > li:hover {
+  padding-left: 15px;
+}
+
+h1 {
+  font-size: 3rem !important;
+  margin: 1rem 0 !important;
+  font-weight: 700 !important;
+}
+
+h2 {
+  margin: 1rem 0 !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+}
+
+.proj:hover li {
+  opacity: 0.5;
+  transition: all .3s;
+}
+
+.proj li {
+  opacity: 1;
+  transition: all .3s;
+}
+
+.proj:hover li:hover {
+  opacity: 1;
+}
